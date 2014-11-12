@@ -1,0 +1,8 @@
+<div>
+  <% @activities.each do |activity| %>
+    <div>
+      <%= link_to activity.name, genres_path %>
+      <p><%= activity.name %></p>
+    </div>
+  <% end %>
+</div>

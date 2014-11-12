@@ -1,0 +1,9 @@
+  <h1><%= @book.title %></h1>
+  <h2><%= @book.author %></h2>
+  <h2><%= @book.genres.map { |genre| genre.name }.join(', ') %></h2>
+
+  <h3>Recommend this book:</h3>
+  <% @activities.each do |activity| %>
+    <%= activity.name %>
+    <button><%= link_to 'Vote', upvote_path(id: activity.id, book_id: @book.id) %></button> <%= activity.votes_for.size %><br>
+  <% end %>

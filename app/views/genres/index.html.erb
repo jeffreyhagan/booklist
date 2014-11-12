@@ -1,0 +1,10 @@
+<body>
+  <h2>What genres do you like?</h1>
+  <div>
+    <% @genres.each do |genre| %>
+    <div>
+      <%= link_to genre.name, book_path(book) %>
+    </div>
+    <% end %>
+  </div>
+</body>
