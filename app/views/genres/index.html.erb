@@ -3,7 +3,7 @@
   <div>
     <% @genres.each do |genre| %>
     <div>
-      <%= link_to genre.name, book_path(book) %>
+      <%= link_to genre.name, books_path(activity_id: params[:activity_id], genre_id: genre.id) %>
     </div>
     <% end %>
   </div>

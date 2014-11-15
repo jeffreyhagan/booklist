@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'devise'
 gem 'pry-rails', groups: [:development]
+gem "better_errors"
+gem "binding_of_caller"

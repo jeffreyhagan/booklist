@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
   def index
-    @book = Book.all
+    activity = Activity.find(params[:activity_id])
+    genre = Genre.find(params[:genre_id])
+    @books = Book.includes(:activities, :genres).where(activities: {id: activity.id}, genres: {id: genre.id})
   end
 
   def show
