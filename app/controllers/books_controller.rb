@@ -9,18 +9,4 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     @activities = Activity.all
   end
-
-  def new
-    @book = Book.new
-  end
-
-  def edit
-    @book = Book.find(params[:id])
-  end
-
-  def destroy
-    @book = Book.find(params[:id])
-    @book.destroy
-    redirect_to root_path, notice: 'Book Deleted'
-  end
 end

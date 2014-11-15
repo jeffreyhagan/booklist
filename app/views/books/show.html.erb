@@ -5,9 +5,7 @@
   <h3>Recommend this book:</h3>
   <% @activities.each do |activity| %>
     <%= activity.name %>
-    <button><%= link_to 'Vote', upvote_path(id: activity.id, book_id: @book.id) %></button>
-    <button><%= link_to 'Downvote', downvote_path(id: activity.id, book_id: @book.id) %></button> 
-    # of votes<%= activity.votes_for.size %><br>
-    # of negative votes<%= activity.get_downvotes.count %><br>
-    # of positive votes<%= activity.get_upvotes.count %><br>
+    <button><%= link_to 'Recommend', upvote_path(id: activity.id, book_id: @book.id) %></button><%= activity.get_upvotes.count %>
+    <button><%= link_to 'Not recommended', downvote_path(id: activity.id, book_id: @book.id) %></button><%= activity.get_downvotes.count %>
+    <br>
   <% end %>
