@@ -1,14 +1,14 @@
-  <h1><%= @book.title %></h1>
-  <div><%= image_tag(@book.thumbnail) %></div>
-  <h4><%= @book.author %></h4>
-  <p>(<%= @book.genres.map { |genre| genre.name }.join(', ') %>)</p>
-  <p><%= @book.description %></p>
+<h1><%= @book.title %></h1>
+<div><%= image_tag(@book.thumbnail) %></div>
+<h4><%= @book.author %></h4>
+<p>(<%= @book.genres.map { |genre| genre.name }.join(', ') %>)</p>
+<p><%= @book.description %></p>
 
-
-  <h3>Recommend this book:</h3>
-  <% @activities.each do |activity| %>
+<h3>Recommend this book:</h3>
+<% @activities.each do |activity| %>
+  <div class="buttons">    
     <%= activity.name %>
     <button><%= link_to 'Recommend', upvote_path(id: activity.id, book_id: @book.id) %></button><%= activity.get_upvotes.count %>
     <button><%= link_to 'Not recommended', downvote_path(id: activity.id, book_id: @book.id) %></button><%= activity.get_downvotes.count %>
-    <br>
-  <% end %>
+  </div>
+<% end %>

@@ -162,7 +162,7 @@ ActiveRecord::Base.transaction do
   harrypotter = Book.create(
     title: 'Harry Potter and the Sorcerers Stone',
     description: 'Harry Potter has no idea how famous he is...',
-    thumbnail: '',
+    thumbnail: 'http://ecx.images-amazon.com/images/I/51MU5VilKpL.jpg',
     author: 'JK Rowling',
     genres: [fantasy, contemporary, classic],
     activities: [beach, bed, waiting, plane, rain, subway, tv]
@@ -270,6 +270,14 @@ ActiveRecord::Base.transaction do
     author: 'Alice Munro',
     genres: [classic, contemporary],
     activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, fire]
+  )
+  kavalier = Book.create(
+    title: 'The Amazing Adventures of Kavalier & Clay'
+    description: 'The beloved, award-winning The Amazing Adventures of Kavalier & Clay, a Michael Chabon masterwork, is the American epic of two boy geniuses named Joe Kavalier and Sammy Clay.',
+    thumbnail: 'http://ecx.images-amazon.com/images/I/51o-JQnLkiL.jpg',
+    author: 'Michael Chabon',
+    genres: [contemporary, comics],
+    activities: [beach, bed, commute, park, plane, subway, rain, crying]
   )
 
 

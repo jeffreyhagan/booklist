@@ -1,10 +1,8 @@
-<body>
-  <h2>What genres do you like?</h1>
+<h2>What genres do you like?</h1>
+<div>
+  <% @genres.each do |genre| %>
   <div>
-    <% @genres.each do |genre| %>
-    <div>
-      <%= link_to genre.name, books_path(activity_id: params[:activity_id], genre_id: genre.id) %>
-    </div>
-    <% end %>
+    <%= link_to genre.name, books_path(activity_id: params[:activity_id], genre_id: genre.id) %>
   </div>
-</body>
+  <% end %>
+</div>
