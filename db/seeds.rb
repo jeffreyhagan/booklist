@@ -272,7 +272,7 @@ ActiveRecord::Base.transaction do
     activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, fire]
   )
   kavalier = Book.create(
-    title: 'The Amazing Adventures of Kavalier & Clay'
+    title: 'The Amazing Adventures of Kavalier & Clay',
     description: 'The beloved, award-winning The Amazing Adventures of Kavalier & Clay, a Michael Chabon masterwork, is the American epic of two boy geniuses named Joe Kavalier and Sammy Clay.',
     thumbnail: 'http://ecx.images-amazon.com/images/I/51o-JQnLkiL.jpg',
     author: 'Michael Chabon',
