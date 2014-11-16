@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141111025910) do
+ActiveRecord::Schema.define(version: 20141116224722) do
 
   create_table "activities", force: true do |t|
     t.string   "name"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20141111025910) do
 
   create_table "books", force: true do |t|
     t.string   "title"
-    t.string   "description"
+    t.text     "description", limit: 255
     t.string   "thumbnail"
     t.string   "author"
     t.datetime "created_at"
