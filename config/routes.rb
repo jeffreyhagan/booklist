@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root to: 'activities#index'
   devise_for :users
-  resources :recommendations
   resources :books
   resources :genres
   resources :activities
