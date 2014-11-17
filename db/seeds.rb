@@ -125,7 +125,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/917Xsj5UYML.jpg',
     author: 'Herman Melville',
     genres: [classic],
-    activities: [bed, cafe, creative, beach, park, rain, fire]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   moonstone = Book.create(
     title: 'The Moonstone',
@@ -133,7 +133,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/61PGRPDsPKL.jpg',
     author: 'Wilkie Collins',
     genres: [classic , mystery],
-    activities: [beach, plane, rain, park, subway, fire, commute]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   nineteen = Book.create(
     title: '1984',
@@ -141,7 +141,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/71DgPQAEnFL.jpg',
     author: 'George Orwell',
     genres: [classic , scifi], 
-    activities: [cafe, commute, world]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   watchmen = Book.create(
     title: 'Watchmen',
@@ -149,7 +149,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/313cFTb5BFL.jpg',
     author: 'Alan Moore',
     genres: [classic , comics],
-    activities: [beach, plane, waiting, commute, world]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   gonegirl = Book.create(
     title: 'Gone Girl',
@@ -157,7 +157,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/41yZreG2lcL.jpg',
     author: 'Gillian Flynn',
     genres: [mystery , contemporary , horror],
-    activities: [beach , plane, subway , rain , fire]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   harrypotter = Book.create(
     title: 'Harry Potter and the Sorcerers Stone',
@@ -165,7 +165,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/51MU5VilKpL.jpg',
     author: 'JK Rowling',
     genres: [fantasy, contemporary, classic],
-    activities: [beach, bed, waiting, plane, rain, subway, tv]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   roosevelt = Book.create(
     title: 'The Rise of Theodore Roosevelt',
@@ -173,7 +173,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/51xJ33tXERL.jpg',
     author: 'Edmund Morris',
     genres: [history, contemporary, nonfiction],
-    activities: [bathroom, cafe, commute, waiting, world, creative]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   shining = Book.create(
     title: 'The Shining',
@@ -181,7 +181,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/51bN7u6JPuL.jpg',
     author: 'Edmund Morris',
     genres: [horror, contemporary, classic],
-    activities: [beach, bed, plane, subway, waiting, tv, fire]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   cosmos = Book.create(
     title: 'Cosmos',
@@ -189,7 +189,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/51SX54fcT-L.jpg',
     author: 'Carl Sagan',
     genres: [nonfiction, contemporary, classic, history, scifi],
-    activities: [bathroom, creative, cafe, commute, park, tv, world]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )  
   fiftyshades = Book.create(
     title: 'Fifty Shades of Grey',
@@ -197,7 +197,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/515kzV0-w%2BL.jpg',
     author: 'E.L. James',
     genres: [contemporary, romance],
-    activities: [bathroom, beach, bed, plane, subway, waiting, fire, tv]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
    hitchhikers = Book.create(
     title: 'The Hitchhikers Guide to the Galaxy',
@@ -205,7 +205,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/813iyiHsBML.jpg',
     author: 'Douglas Adams',
     genres: [contemporary, scifi],
-    activities: [bathroom, beach, creative, plane, subway, waiting, tv]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   gameofthrones = Book.create(
     title: 'Game of Thrones',
@@ -213,7 +213,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/5163N91r6lL.jpg',
     author: 'George R. R. Martin',
     genres: [contemporary, fantasy],
-    activities: [bathroom, beach, plane, subway, commute, tv, world]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   beloved = Book.create(
     title: 'Beloved',
@@ -221,7 +221,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/51srBOCdgBL.jpg',
     author: 'Toni Morrison',
     genres: [contemporary, classic, history],
-    activities: [beach, bed, creative, cafe, crying, commute, park, rain, fire]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   givingtree = Book.create(
     title: 'The Giving Tree',
@@ -229,7 +229,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/91MD7TSh8tL.jpg',
     author: 'Shel Silverstein',
     genres: [contemporary, classic],
-    activities: [bathroom, creative, bed, crying, waiting, rain, fire]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   mockingbird = Book.create(
     title: 'To Kill a Mockingbird',
@@ -237,7 +237,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/715VLP6M-OL.jpg',
     author: 'Harper Lee',
     genres: [classic, mystery],
-    activities: [beach, bed, creative, cafe, crying, rain, fire]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   bigsleep = Book.create(
     title: 'The Big Sleep',
@@ -245,7 +245,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/41jrf0klMDL.jpg',
     author: 'Raymond Chandler',
     genres: [classic, mystery, romance],
-    activities: [bathroom, beach, bed, commute, park, plane, subway, waiting, rain, fire],
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world],
   )
   walkingdead = Book.create(
     title: 'The Walking Dead',
@@ -253,7 +253,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/617Ci4noN1L.jpg',
     author: 'Robert Kirkman, Tony Moore',
     genres: [comics, horror, contemporary],
-    activities: [bathroom, beach, commute, subway, plane, park, rain, fire, tv]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   howto = Book.create(
     title: 'How to Win Friends & Influence People',
@@ -261,7 +261,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/810IASGMUYL.jpg',
     author: 'Dale Carnegie',
     genres: [classic, nonfiction],
-    activities: [bathroom, bed, creative, cafe, commute, park, waiting, world]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   munro = Book.create(
     title: 'Selected Stories of Alice Munro',
@@ -269,7 +269,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/41Zm%2BHnq8TL.jpg',
     author: 'Alice Munro',
     genres: [classic, contemporary],
-    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, fire]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
   kavalier = Book.create(
     title: 'The Amazing Adventures of Kavalier & Clay',
@@ -277,7 +277,7 @@ ActiveRecord::Base.transaction do
     thumbnail: 'http://ecx.images-amazon.com/images/I/51o-JQnLkiL.jpg',
     author: 'Michael Chabon',
     genres: [contemporary, comics],
-    activities: [beach, bed, commute, park, plane, subway, rain, crying]
+    activities: [bathroom, beach, bed, creative, cafe, crying, commute, park, plane, subway, waiting, rain, tv, fire, world]
   )
 
 
